@@ -22,15 +22,15 @@ def heartbeat(bpm):
 
 def repeat(bpm):
     init = bpm
-    _bpm = bpm + 20
+    _bpm = bpm + 5
     while True:
-        while _bpm >= bpm:
+        while _bpm > bpm:
             bpm += 1
             heartbeat(bpm)
             print(_bpm)
             print(bpm)
         else:
-            while init <= bpm:
+            while init < bpm:
                 bpm -= 1
                 heartbeat(bpm)
                 print(_bpm)
