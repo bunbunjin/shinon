@@ -1,6 +1,5 @@
 import pygame
 import time
-from dataclasses import dataclass
 
 
 # range [bpm : bpm+20]
